@@ -1,0 +1,29 @@
+{
+  "name": "tenant-leads-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Standalone tenant (rental applicant) lead capture microservice for 860Leads landlord clients.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "setup": "./scripts/setup.sh",
+    "test:local": "./scripts/test-local.sh",
+    "deploy:render": "./scripts/deploy-render.sh"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.4.2",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "google-auth-library": "^9.15.0",
+    "googleapis": "^144.0.0",
+    "helmet": "^8.0.0",
+    "nodemailer": "^9.0.3",
+    "twilio": "^6.0.2",
+    "zod": "^4.4.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
